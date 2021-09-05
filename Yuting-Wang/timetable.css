@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
+
+* {
+  font-family: sans-serif; 
+}
+html,body{
+  display: grid;
+  height: 100%;
+  width: 100%;
+  margin-top: 20px;
+  place-items: center;
+  background-image: url(images/slider-bg.jpg);
+}
+nav{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.336);
+	position: fixed;
+	left: 0;
+	top: 0;
+	width:100%;
+	z-index: 1;
+	background-color: #0f0f0f;
+
+}
+nav ul{
+	display: flex;
+  list-style-type: none;
+}
+
+.active{
+    background-color: yellow;
+    color:#000;
+	/* box-shadow: 2px 2px 4px rgba(186, 54, 101, 0.5); */
+	transition: all ease 0.2s;
+}
+.active:hover{
+    background-color: yellow;
+    color:#000;
+	/* box-shadow: 2px 2px 4px rgba(186, 54, 101, 0.5); */
+	transition: all ease 0.2s;
+}
+
+nav ul li a{
+    font-family: 'Montserrat';
+	height:40px;
+	line-height: 43px;
+	margin: 3px;
+	padding: 0px 22px;
+	display: flex;
+	font-size: 0.8rem;
+	text-transform: uppercase;
+	font-weight: 500;
+	color:#ffffff;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    transition: 0.2s ease-in-out;
+}
+nav ul li a:hover{
+    color:#BA3665;
+	transition: all ease 0.2s;
+}
+nav .menu-btn,
+.menu-icon{
+		display:none;
+	}
+
+.about-text h1{
+  font-size: 28px;
+  color:#FFF;
+  font-weight: normal;
+  margin:120px 100px 0px;
+  padding: 0;
+}
+
+.about-text p{
+  font-size: 14px;
+  color:#E9E9EA;
+  font-weight: lighter;
+  margin:10px 20px ;
+  padding: 0;
+}
+
+.content-table {
+  border-collapse: collapse;
+  border-color: black;
+  margin: 20px 200px 150px;
+  font-size: 1.5em;
+  min-width: 400px;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  /**box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);**/
+}
+
+.content-table thead tr {
+  border-bottom: 2px solid #dddddd;
+  background-color: #BA3665;
+  color: #ffffff;
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.content-table thead th{
+  font-weight: lighter;
+  font-size: 16px;
+
+}
+
+.content-table th,
+.content-table td {
+  padding: 20px 30px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.content-table tbody tr {
+  border-bottom:0px solid #dddddd;
+  border-left :4px solid #ba3665;
+  border-right :4px solid #ba3665;
+  letter-spacing: 0.5px;
+  background-color: #fff;
+
+}
+
+.content-table tbody tr:nth-of-type(even) {
+  background-color: #FFF0F5;
+}
+
+.content-table tbody tr:last-of-type {
+  border-bottom: 2px solid #ba3665;
+}
